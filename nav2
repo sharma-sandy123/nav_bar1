@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+         <ul class="sidebar"> 
+            <li ><a href="#"><i class="fa-solid fa-xmark iconX"></i></a></li>
+            <li class="hello"><a href="#">Blog</a>
+            
+                </div></li>
+            <li> <a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+        <ul>
+            <li ><a href="#">CSSsnippet</a></li>
+            <li class="my"><a href="#">Blog
+                <div class="inner">
+                    <ul>
+                        <li>hi</li>
+                        <li>hello</li>
+                        <li>bye</li>
+                    </ul>
+            </a></li>
+            <li> <a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Login</a></li>
+            <li><i class="fa-sharp-duotone fa-regular fa-house icon"></i></li>
+    </nav>
+    <script src="nav2.js"></script>
+</body>
+</html>
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    min-height: 100vh;
+    /* background-image: url("hi.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    background-color: #fff;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    /* we didnot give height here as we want the height of navbar to be according to the elements */
+}
+nav ul{
+    width:100%;
+
+    text-decoration: none;
+    color:black;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+nav  li{
+    
+    list-style: none;
+    height: 50px;
+   
+    
+}
+nav li:first-child{
+   margin-right: auto;
+   
+   /* position:fixed;
+   top:0;
+ donot do this as this will place it with respect to browser
+ and it will stuck at that point will be there if we scroll
+ not a good move
+
+   left:0; */
+}
+nav  a{
+    text-decoration: none;
+    height: 100%;
+    /* this is used to make padding from left-right but not from top -left */
+    padding:0 30px;
+    display: flex;
+    color:black;
+    align-items: center;
+    
+}
+nav a:hover{
+    background-color: #f0f0f0;
+}
+.sidebar{
+    /* this is used to make it the side bar to be fixed at one place */
+    position: fixed;
+    top:0;
+    right:0;
+    /* height:100vh; this is to take whole height of the bar */
+    width:250px;
+    background-color: #f0f0f03a;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index:999;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+    
+}
+/* .sidebar:hover{
+    opacity: 1;
+} */
+.icon{
+    height: 26;
+    width: 26;
+    padding: 15px 0;
+}
+.iconX{
+    height: 26;
+    width: 26;
+    margin-left: auto;
+
+}
+.hello:hover{
+    transform: scale(0.3);
+}
+.my ul{
+    opacity: 0;
+}
+.inner{
+    display: flex;
+    height: 500px;
+    width: 100px;
+   background-color: aqua;
+   opacity: 0;
+    
+}
+@keyframes colour {
+    from{
+        background-color: aqua;
+    }    
+    to{
+        background-color: black;
+    }
+}
+.inner:hover{
+    
+    opacity: 1;
+    background-color: black;
+}
+.my:hover ul{
+    opacity: 1;
+    background: bconst sidebar=document.querySelector(".sidebar");
+
+sidebar.addEventListener("click", () => {
+  if (sidebar.style.opacity == 1) {
+    sidebar.style.opacity = 0;
+  } else {
+    sidebar.style.opacity = 1;
+  }
+});
+
+
+lack;
+}
+.inner li{
+    list-style: none;
+
+}
